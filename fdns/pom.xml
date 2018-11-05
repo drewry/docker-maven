@@ -33,7 +33,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.6.RELEASE</version>
+		<version>2.1.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -44,7 +44,7 @@
 		<logger.version>0.3.3</logger.version>
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
-		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -104,7 +104,7 @@
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver</artifactId>
-			<version>3.6.4</version>
+			<version>3.8.2</version>
 		</dependency>
 
 		<dependency>
@@ -126,13 +126,13 @@
 			<version>1.0.2</version>
 		</dependency>
 
-    <dependency>
+		<dependency>
 			<groupId>gov.cdc</groupId>
 			<artifactId>fdns-kafka-library</artifactId>
 			<version>1.0.1</version>
 		</dependency>
 
-    <dependency>
+		<dependency>
 			<groupId>gov.cdc</groupId>
 			<artifactId>fdns-rules-engine</artifactId>
 			<version>1.0.2</version>
@@ -159,7 +159,7 @@
 		<dependency>
 			<groupId>org.springframework.security.oauth.boot</groupId>
 			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
-			<version>2.0.6.RELEASE</version>
+			<version>2.1.0.RELEASE</version>
 		</dependency>
 	</dependencies>
 
@@ -181,7 +181,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-    </plugins>
+		</plugins>
 	</build>
 
 	<!-- add GitHub CDCgov to repositories -->
@@ -191,5 +191,4 @@
 			<url>https://github.com/CDCgov/maven-repository/raw/master/</url>
 		</repository>
 	</repositories>
-
 </project>
