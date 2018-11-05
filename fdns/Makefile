@@ -1,5 +1,5 @@
 docker-build:
 	docker build \
-		-t docker-maven \
+		-t cdcgov/maven:fdns \
 		--rm \
 		.
